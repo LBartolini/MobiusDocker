@@ -1,8 +1,7 @@
 services:
   mobius:
     build: .
-    environment:
-      - DISPLAY=${DISPLAY}
+    ports:
+      - 6123:6123
     volumes:
-      - /tmp/.X11-unix:/tmp/.X11-unix
       - ./data:/root/MobiusProject

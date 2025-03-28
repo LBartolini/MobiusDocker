@@ -6,7 +6,7 @@ Projects are stored inside the data folder.
 
 make build
 
-make up
+make up, connect to localhost:6123 with a VNC client
 
 make down
 
@@ -16,6 +16,6 @@ docker
 
 docker compose
 
-xhost
+vnc
 
 (Mobius .deb package to be installed, in case of errors probably you have to edit the version of mobius copied inside the Dockerfile)

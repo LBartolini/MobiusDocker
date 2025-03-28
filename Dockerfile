@@ -21,6 +21,10 @@ RUN apt install -f ./libssl1.0.0_1.0.2n-1ubuntu5_i386.deb -y
 
 RUN apt install -f ./mobius.deb -y
 
-ENV DISPLAY=:0
+RUN apt-get install x11vnc xvfb fluxbox -y
 
-CMD ["mobius"]
+COPY run.sh run.sh
+
+RUN chmod +x run.sh
+
+CMD ["./run.sh"]
