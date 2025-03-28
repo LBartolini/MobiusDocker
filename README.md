@@ -16,6 +16,6 @@ docker
 
 docker compose
 
-xhost
+X11 (xhost command in Linux)
 
 (Mobius .deb package to be installed, in case of errors probably you have to edit the version of mobius copied inside the Dockerfile)
