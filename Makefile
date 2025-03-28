@@ -8,5 +8,10 @@ up:
 	docker compose up
 	xhost -local:docker
 
+upd:
+	xhost +local:docker
+	docker compose up -d
+
 down:
 	docker compose down
+	xhost -local:docker
